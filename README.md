@@ -1,13 +1,13 @@
-Appointment Calendar Program
+# Appointment Calendar Program
 
 This is a C program designed to manage an appointment calendar. It allows users to add, delete, and view appointments within the calendar. The program provides a command-line interface for interacting with the calendar. Below, you'll find a comprehensive guide on how to use this program, its features, and its structure.
 
-Introduction
+## Introduction
 
 This program was developed as a course project during the ELEC-A7100 spring 2021 course. It allows users to manage appointments through a set of commands, including adding, deleting, listing, saving, loading, and quitting. The maximum size of a description for an appointment is 20 characters.
 Please note that the program does not support special characters (e.g., å, ä, ö) due to limitations in the C language's handling of character encodings.
 
-Features
+## Features
 
 Add Appointments: Users can add appointments by providing a description, month, day, and hour.
 Delete Appointments: Appointments can be deleted by specifying the month, day, and hour.
@@ -16,7 +16,7 @@ Save and Load: The program allows users to save their calendar to a file and loa
 Error Handling: The program checks for various errors, such as invalid inputs or overlong descriptions, and provides informative error messages.
 Chronological Sorting: The calendar is automatically sorted chronologically based on months, days, and hours.
 
-Code Structure
+## Code Structure
 
 The code is structured as follows:
 Main Function: The main function serves as the entry point of the program, where user commands are read and processed.
@@ -27,7 +27,7 @@ Appointment Handling: Functions addAppointment and deleteAppointment manage addi
 Sorting: The sortChrono function is responsible for sorting the calendar in chronological order.
 Printing Calendar: The printCalendar function displays upcoming appointments.
 
-Compilation
+## Compilation
 
 To compile and run the program, you can use a C compiler such as GCC. Here's a basic compilation command:
 gcc -o calendar_program appointments.c
